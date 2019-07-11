@@ -5,34 +5,37 @@
 ****
 ## Prototype:
 
-1.Not login:
+1.Not login:<br>
 
-    1.index.vue
+&emsp;&emsp;1.index.vue<br>
 ![index prototype](./Prototype/index.png "index prototype")
-    2.login.vue
+&emsp;&emsp;2.login.vue<br>
 ![login prototype](./Prototype/login.png "login prototype")
-    3.registry.vue
+&emsp;&emsp;3.registry.vue<br>
 ![registry prototype](./Prototype/registry.png "registry prototype")
 
 2.Login:
 
-    1.home.vue
+&emsp;&emsp;1.home.vue<br>
 ![home prototype](./Prototype/home.png "home prototype")
-    2.investment.vue
+&emsp;&emsp;2.investment.vue<br>
 ![investment prototype](./Prototype/investment.png "investment prototype")
-    3.investmentdetails
+&emsp;&emsp;3.investmentdetails<br>
 ![investmentdetails prototype](./Prototype/investmentdetails.png "investmentdetails prototype")
-    4.investmentrecords
+&emsp;&emsp;4.investmentrecords<br>
 ![investmentrecords prototype](./Prototype/investmentrecords.png "investmentrecords prototype")
-    5.credit.vue
+&emsp;&emsp;5.credit.vue<br>
 ![credit prototype](./Prototype/credit.png "credit prototype")
-    6.loandetails.vue
+&emsp;&emsp;6.loandetails.vue<br>
 ![loandetails prototype](./Prototype/loandetails.png "loandetails prototype")
-    7.loanrecords.vue
+&emsp;&emsp;7.loanrecords.vue<br>
 ![loanrecords prototype](./Prototype/loanrecords.png "loanrecords prototype")
-    8.letters.vue
+&emsp;&emsp;8.letters.vue<br>
 ![letters prototype](./Prototype/letters.png "letters prototype")
-
+&emsp;&emsp;9.guarantee.vue<br>
+![guarantee prototype](./Prototype/guarantee.png "guarantee prototype")
+&emsp;&emsp;10.overdue.vue<br>
+![overdue prototype](./Prototype/overdue.png "overdue prototype")
 ****
 ## TODO List:
 
