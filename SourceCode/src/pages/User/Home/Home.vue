@@ -1,46 +1,31 @@
 <template>
-    <div class="container-fluid py-5 home"  lazy="loaded">
-        <div class="row justify-content-center py-5">
-            <div class="text-center col-md-12">
-                <!--<div class="bigicon"><img src="../../../public/images/icon/smallicon.png"/></div>-->
-                <div class="title">P2P小额贷平台</div>
-                <div class="subtitle mb-5"></div>
-<!--                <div class="text">一家书店温暖一座城市</div>-->
-                <br /><br /><br /><br /><br />
-            </div>
-            <div class="mt-5">
-<!--                <button class="btn btn-primary" @click="$router.push('/books')">开始探索</button>-->
-                <el-row :gutter="250">
-                    <el-col :span="12">
-                    <el-button type="primary" style="width:200px;" @click="$router.push('/login')">登录</el-button>
-                    </el-col>
-                    <el-col :span="12">
-                    <el-button type="primary" style="width:200px;" @click="$router.push('/register')">注册</el-button>
-                    </el-col>
-                </el-row>
-                <br /><br /><br /><br /><br />
-                <el-row :gutter="250">
-                    <el-col :span="12">
-                        <el-button type="primary" style="width:200px;" @click="$router.push('/credit')">我要借款</el-button>
-                    </el-col>
-                    <el-col :span="12">
-                        <el-button type="primary" style="width:200px;" @click="$router.push('/register')">我要还款</el-button>
-                    </el-col>
-                    <el-col :span="12">
-                        <el-button type="primary" style="width:200px;" @click="$router.push({name:'Information', params:{text_id:'123'}})">信息</el-button>
-                    </el-col>
-                </el-row>
-            </div>
-        </div>
+        <div>
+            <img src="../../../../public/images/404.png" style="width: 100%" @click="handle">
     </div>
 </template>
 
 <script>
+    import {mapState} from 'vuex'
     export default {
         name: "Home",
+        computed:{
+            ...mapState({
+                isGuarantorLogin: state=> state.Guarantor.isGuarantorLogin
+            })
+        },
         data() {
             return {
                 imgUrl: '../../../public/images/home2.jpg'
+            }
+        },
+        methods:{
+            handle(){
+                if(this.isGuarantorLogin){
+                    this.$router.push('/guarantor/guarantee')
+                }
+                else{
+                    this.$router.push('/')
+                }
             }
         }
     }
@@ -66,7 +51,8 @@
 
     .home[lazy=loaded]{
         height: 1200px;
-        background:url('../../../../public/images/home2.jpg');
+        weight: 100%;
+        background:url('../../../../public/images/404.png');
         background-size:cover;
     }
 

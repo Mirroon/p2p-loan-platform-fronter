@@ -97,7 +97,7 @@ export default new VueRouter({
             }
         },
         {
-            path: '/home',
+            path: '*',
             component: Home,
             meta: {
                 showNavDetail: true,
