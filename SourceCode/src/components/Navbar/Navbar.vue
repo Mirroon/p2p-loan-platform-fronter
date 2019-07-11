@@ -6,7 +6,7 @@
                 <div>
                         <button class="textbutton" @click="home" v-bind:class="($route.path==='/index')? 'none': 'none'"><span>主页</span></button>
                         <div v-if="isLogin" style="display: inline-block">
-                        <button class="textbutton" @click="loan" v-bind:class="($route.path==='/credit')? 'textbuttonborder': 'none'"><span>贷款</span></button>
+                        <button class="textbutton" @click="loan" v-bind:class="($route.path==='/credit')? 'textbuttonborder': 'none'"><span>借款</span></button>
                         <button class="textbutton" @click="investment" v-bind:class="($route.path==='/investment')? 'textbuttonborder': 'none'"><span>投资</span></button>
                         <button class="textbutton" @click="letter" v-bind:class="($route.path==='/letter')? 'textbuttonborder': 'none'"><span>邮件</span></button>
                         </div>
